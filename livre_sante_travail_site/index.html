@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Infirmier en Entreprise, Expert en Santé au Travail</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajout de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Ajout de Lunr.js pour la recherche -->
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+</head>
+<body>
+    <header>
+        <h1>L'Infirmier en Entreprise, Expert en Santé au Travail</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher dans le livre...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i> Menu
+        </div>
+        <div class="nav-content">
+            <h2>Table des Matières</h2>
+            <ul>
+                <li><a href="chapitres/chapitre_01_introduction.html">Chapitre 1 : Introduction à la Santé au Travail</a></li>
+                <li><a href="chapitres/chapitre_02_role_responsabilites.html">Chapitre 2 : Rôle et Responsabilités de l'Infirmier en Entreprise</a></li>
+                <li><a href="chapitres/chapitre_03_evaluation_risques.html">Chapitre 3 : Évaluation des Risques Professionnels</a></li>
+                <li><a href="chapitres/chapitre_04_prevention_risques.html">Chapitre 4 : Prévention des Risques Professionnels</a></li>
+                <li><a href="chapitres/chapitre_05_gestion_at_mp.html">Chapitre 5 : Gestion des Accidents du Travail et Maladies Professionnelles</a></li>
+                <li><a href="chapitres/chapitre_06_promotion_sante_bienetre.html">Chapitre 6 : Promotion de la Santé et du Bien-être en Entreprise</a></li>
+                <li><a href="chapitres/chapitre_07_cadre_legal.html">Chapitre 7 : Cadre Réglementaire et Légal de la Santé au Travail</a></li>
+                <li><a href="chapitres/chapitre_08_aspects_psychosociaux.html">Chapitre 8 : Aspects Psychosociaux du Travail et Rôle de l'Infirmier</a></li>
+                <li><a href="chapitres/chapitre_09_ergonomie.html">Chapitre 9 : Ergonomie et Aménagement des Postes de Travail</a></li>
+                <li><a href="chapitres/chapitre_10_veille_sanitaire.html">Chapitre 10 : Veille Sanitaire et Épidémiologique en Entreprise</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="welcome">
+            <h2>Bienvenue sur la version web du livre</h2>
+            <p>Ce site web présente l'intégralité du livre "L'Infirmier en Entreprise, Expert en Santé au Travail", un guide complet pour maîtriser les enjeux et les pratiques de la santé au travail.</p>
+            <p>Sélectionnez un chapitre dans la table des matières pour commencer la lecture, ou utilisez la barre de recherche pour trouver des informations spécifiques.</p>
+        </section>
+        
+        <section id="search-results" class="search-results">
+            <h2>Résultats de recherche</h2>
+            <div id="results-container"></div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form" action="https://formspree.io/f/xleqnwkb" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos de ce site</h3>
+                <p>Ce site web présente le livre "L'Infirmier en Entreprise, Expert en Santé au Travail", un guide complet pour les professionnels de la santé au travail.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#" id="toggle-contact">Contact</a></li>
+                    <li><a href="https://github.com/manus-health/livre-sante-travail" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Manus - Tous droits réservés</p>
+        </div>
+    </footer>
+    
+    <!-- Script pour la recherche -->
+    <script src="js/search.js"></script>
+    <!-- Script pour les commentaires -->
+    <script src="js/comments.js"></script>
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>
